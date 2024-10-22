@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import styles from "../styles/Home.module.sass";
 import Head from "next/head";
 import axios from "axios";
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 import Socials from "../components/Socials";
 import Heading from "../components/Heading";
 
