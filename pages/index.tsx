@@ -19,15 +19,15 @@ const geistMono = localFont({
 });
 
 export const getStaticProps = async () => {
-    const response = await axios.get(process.env.NEXT_PUBLIC_API_HOST + `/socials`)
-
-    if (!response.data) {
+    try {
+        const response = await axios.get(process.env.NEXT_PUBLIC_API_HOST + `/socials`)
+        return {
+        props: {socials: response.data}
+    }
+    }catch {
         return {notFound: true}
     }
 
-    return {
-        props: {socials: response.data}
-    }
 }
 
 
