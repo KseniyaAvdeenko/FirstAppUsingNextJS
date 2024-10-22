@@ -21,7 +21,7 @@ const Posts: FC<{posts: IPost[]}> = ({posts}) => {
     return (
         <main className={styles.wrapper}>
             <Head><title>Posts</title></Head>
-            <Heading heading={'Posts'}/>
+            <Heading tag={'h1'} heading={'Posts'}/>
             <div className={styles.posts}>
                 {posts && posts.map(({id, title})=>(
                     <Link href={'/posts/' + id} className={styles.posts__item} key={id}>

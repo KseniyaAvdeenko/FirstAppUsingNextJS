@@ -36,7 +36,7 @@ const Home = ({socials}) => {
     return (
         <main className={styles.wrapper}>
             <Head><title>Home</title></Head>
-            <Heading heading={'Home page'}/>
+            <Heading tag={'h1'} heading={'Home page'}/>
             <Socials socials={socials}/>
         </main>
     );

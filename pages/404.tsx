@@ -15,7 +15,7 @@ const Error: FC = () => {
     return (
         <main className={styles.wrapper}>
             <Head><title>404</title></Head>
-            <Heading heading={'404'}/>
+            <Heading tag={'h1'} heading={'404'}/>
             <Heading tag={'h3'} heading={'oops! :( Something went wrong'}/>
         </main>
     );

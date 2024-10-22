@@ -25,7 +25,7 @@ const Contacts:FC<{contacts: IContact[]}> = ({contacts}) => {
     return (
         <main className={styles.wrapper}>
             <Head><title>Contacts</title></Head>
-            <Heading heading={'Contacts'}/>
+            <Heading tag={'h1'} heading={'Contacts'}/>
             <div className={styles.contacts}>
                 {contacts && contacts.map(({id, name, email})=>(
                     <Link href={'/contacts/' + id} className={styles.contacts__item} key={id}>

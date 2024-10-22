@@ -10,7 +10,7 @@ const PostInfo:FC<{post: IPost}> = ({post}) => {
     if (!post) return (<div>Empty post</div>)
     return (
         <div className={styles.contactWrapper}>
-            <Heading heading={title}/>
+            <Heading tag={'h1'} heading={title}/>
             <div className={styles.contactWrapper__item}>{body}</div>
         </div>
     );

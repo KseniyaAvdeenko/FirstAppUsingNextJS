@@ -11,7 +11,7 @@ const ContactInfo: FC<{contact: IContact }> = ({contact}) => {
     if(!contact)return (<div>Empty contact</div>)
     return (
         <div className={styles.contactWrapper}>
-            <Heading heading={name}/>
+            <Heading tag={'h1'} heading={name}/>
             <div className={styles.contactWrapper__item}>{email}</div>
             <div className={styles.contactWrapper__item}>{street}, {suite}, {city}</div>
         </div>
