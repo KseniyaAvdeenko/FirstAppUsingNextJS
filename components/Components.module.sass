@@ -1,0 +1,45 @@
+@import "../styles/Home.module"
+
+.layout
+  display: grid
+  min-height: 100vh
+  width: 100%
+  grid-template-rows: 7rem auto 5rem
+
+.footer
+  @include dFlex(row, center, center)
+
+.footer,
+.header
+  padding: 2rem 10%
+  background: cadetblue
+  color: white
+
+.header
+  @include dFlex(row, center, space-between)
+  text-transform: uppercase
+  font-size: 1.8rem
+
+.linkHover
+  text-shadow: 0 0 1rem white
+
+.navbar
+  @include dFlex(row, center, center)
+
+  &__item
+    margin: 0 2rem
+    cursor: pointer
+    font-weight: 600
+    letter-spacing: .1rem
+    transition: all .3s ease-in-out
+    &:hover
+      @extend .linkHover
+
+.postsWrapper,
+.contactWrapper
+  @include dFlex(column, center, flex-start)
+  width: 100%
+  padding: 3rem 10%
+
+  &__item
+    padding: 0 1rem

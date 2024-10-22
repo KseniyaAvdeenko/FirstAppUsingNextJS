@@ -1,0 +1,21 @@
+@mixin dFlex($direction, $ai, $jc)
+  display: flex
+  flex-direction: $direction
+  align-items: $ai
+  justify-content: $jc
+
+.wrapper
+  min-height: 100%
+  padding: 3rem 10%
+  @include dFlex(column, center, center)
+
+.posts,
+.contacts
+  width: 100%
+  @include dFlex(column, flex-start, flex-start)
+  &__item
+    padding: 1rem 0
+    transition: all .5s ease-in-out
+    &:hover
+      color: teal
+      font-size: 1.8rem

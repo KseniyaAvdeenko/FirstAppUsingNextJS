@@ -1,0 +1,90 @@
+.wrapper {
+  min-height: 100%;
+  padding: 3rem 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts,
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.posts__item,
+.contacts__item {
+  padding: 1rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.posts__item:hover,
+.contacts__item:hover {
+  color: teal;
+  font-size: 1.8rem;
+}
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-rows: 7rem auto 5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer,
+.header {
+  padding: 2rem 10%;
+  background: cadetblue;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.linkHover, .navbar__item:hover {
+  text-shadow: 0 0 1rem white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__item {
+  margin: 0 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.postsWrapper,
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 3rem 10%;
+}
+.postsWrapper__item,
+.contactWrapper__item {
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=Components.module.css.map */
